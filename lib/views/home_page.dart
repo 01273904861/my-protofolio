@@ -168,7 +168,9 @@ class _HomePageState extends State<HomePage> {
         FadeInUp(
           duration: const Duration(milliseconds: 1800),
           child: AppButtons.buildMaterialButton(
-              onTap: () {}, buttonName: 'Download CV'),
+              onTap: () {
+                _launchCV();
+              }, buttonName: 'Download CV'),
         ),
       ],
     );
